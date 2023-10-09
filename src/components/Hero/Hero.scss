@@ -1,0 +1,134 @@
+.hero {
+    display: grid;
+    place-items: center;
+    background-image: url("../../assets/hero-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 659px;
+
+    .content {
+        max-width: 963px;
+        margin: 0 auto;
+
+        h1 {
+            font-size: 44px;
+            font-weight: bold;
+            line-height: 44px;
+            color: #fff;
+            max-width: 1090px;
+            margin-left: 50px;
+            margin-bottom: 10px;
+        }
+
+        .search_area {
+            background-color: #fff;
+            border-radius: 40px;
+            display: flex;
+            overflow: hidden;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0px 30px;
+
+            input {
+                font-size: 22px;
+
+                &::placeholder {
+                    font-size: 18px;
+                }
+            }
+
+            &_box {
+                padding: 10px 30px;
+                width: 100%;
+                border: none;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            button {
+                display: grid;
+                place-items: center;
+                background-color: #fff;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 20px 30px;
+                border-radius: 0 30px 30px 0;
+                background-color: #fff;
+                color: #818181;
+                font-size: 20px;
+                font-weight: bold;
+                transition: all 0.3s ease-in-out;
+
+            }
+
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            color: #fff;
+            padding: 10px 20px;
+            margin-left: 50px;
+
+            span {
+                opacity: .7;
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+
+                }
+            }
+        }
+    }
+}
+
+// mobile screen only
+@media (max-width: 768px) {
+    .content {
+        h1 {
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 30px;
+        }
+    }
+
+    .search_area {
+        background-color: #fff;
+        border-radius: 30px;
+        display: flex;
+        overflow: hidden;
+        justify-content: space-between;
+        margin: 0px 30px;
+
+        &_box {
+            padding: 10px 15px;
+            width: 100%;
+            border: none;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        button {
+
+            background-color: #fff;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 10px 15px;
+            border-radius: 0 30px 30px 0;
+            background-color: #fff;
+            color: #818181;
+            font-size: 20px;
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
+        }
+
+    }
+}

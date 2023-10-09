@@ -1,0 +1,32 @@
+.categoryCard {
+    max-width: 230px;
+    height: 120px;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    background-color: black;
+    background-image: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+
+    .cover {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.15);
+        background: radial-gradient(farthest-corner at 50% 50%,
+                rgba(0, 0, 0, 0.15) 0%,
+                rgba(0, 0, 0, 0.4) 50%,
+                rgba(0, 0, 0, 0.55) 100%);
+    }
+
+    h2 {
+        position: relative;
+        font-size: 24px;
+        font-weight: 500 !important;
+        z-index: 1;
+    }
+}

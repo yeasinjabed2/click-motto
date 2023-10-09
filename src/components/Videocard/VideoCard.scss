@@ -1,0 +1,85 @@
+.photoCard {
+    position: relative;
+    color: #ffffff;
+    cursor: pointer;
+
+    .cover,
+    .top_right,
+    .footer {
+        display: none;
+    }
+
+    .video_icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 50px;
+        color: #fff;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+
+        .cover,
+        .top_right,
+        .footer {
+            display: block;
+            position: absolute;
+            padding: 15px;
+        }
+
+        .video_icon {
+            color: #e17800
+        }
+
+
+        .cover {
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.15);
+            background: radial-gradient(farthest-corner at 50% 50%,
+                    rgba(0, 0, 0, 0.15) 0%,
+                    rgba(0, 0, 0, 0.4) 50%,
+                    rgba(0, 0, 0, 0.55) 100%);
+        }
+
+        .top_right {
+            top: 5px;
+            right: 5px;
+            display: flex;
+            gap: 7px;
+        }
+
+        .circle_icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            display: grid;
+            place-items: center;
+            background-color: #ffffffce;
+            color: #636363;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #1daf30;
+                color: #fff;
+            }
+        }
+
+        .bg_green {
+            background-color: #1daf30;
+            color: #fff;
+        }
+
+        .footer {
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+    }
+}

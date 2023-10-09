@@ -1,0 +1,105 @@
+.up_content {
+    margin-top: -70px;
+}
+
+.content_top_over {
+    max-width: 90%;
+    margin: 0 auto;
+
+    background-color: #fff;
+    padding: 20px;
+
+}
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 15px;
+
+    .links {
+        display: flex;
+        gap: 1rem;
+
+        a {
+            color: #333333;
+            text-decoration: none;
+            opacity: 0.60;
+
+            &:hover {
+
+                opacity: 1;
+            }
+
+            &.active {
+                opacity: 1;
+            }
+        }
+    }
+
+    .sort {
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-image: url('../../assets/icons/select-arrow.png');
+            background-repeat: no-repeat;
+            background-position: right center;
+            padding-right: 10px;
+            color: #7a7a7a;
+            cursor: pointer;
+            border: none;
+            outline: none;
+
+            option:hover {
+                background: rgba(0, 0, 0, 0.3);
+                color: #fff;
+                text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+            }
+        }
+    }
+}
+
+//mobile screen only 
+@media (max-width: 768px) {
+    .filter {
+        flex-direction: column;
+        gap: 1rem;
+
+        .links {
+            justify-content: center;
+        }
+
+        .sort {
+            text-align: right;
+        }
+    }
+
+
+}
+
+
+.curtesy {
+    padding-right: 70px;
+
+    p {
+        text-align: right;
+        font-size: 12px;
+        color: #ccc;
+        margin-top: 20px;
+
+        b {
+            color: #fff;
+        }
+
+        a {
+            color: #fff;
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding-right: 25px;
+    }
+
+
+}
